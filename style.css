@@ -1,0 +1,180 @@
+/* ==== RESET CSS ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Preto: #0C0B0B;
+    --Cinza: #0F0E0E;
+    --Branco: #B7B7B7;
+    --Verde: #046313;
+    --Azul: #044A7D;
+    --Amarelo: #725200;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: var(--Branco);
+    background-color: var(--Preto);
+}
+
+/* ==== MOBILE ===== */
+@media (max-width: 800px) {
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteudo{
+    width: 50%;
+    height: auto;
+}
+
+/* ===== HEADER ===== */
+
+#Header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Header img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+}
+
+.container-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Header button {
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem;
+    background-color: var(--Branco);
+}
+
+/* ===== CARDS ===== */
+#componente {
+    margin-top: 1rem;
+    grid-row: 2/3;
+    grid-area: "componente";
+    gap: 1rem;
+}
+
+#componente {
+    display: flex;
+    flex-direction: column;
+}
+
+.comp-1, .comp-2, .comp-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 5.625rem;
+    border-radius: 5px;
+}
+
+#componente h2 {
+    font-size: 2rem;
+}
+
+#componente h3 {
+    font-size: 1rem;
+}
+
+.comp-1{
+    padding-left: 1rem;
+    background-color: var(--Verde);
+}
+
+.comp-2{
+    padding-left: 1rem;
+    background-color: var(--Azul);
+}
+
+.comp-3{
+    padding-left: 1rem;
+    background-color: var(--Amarelo);
+}
+}
+
+/* ==== DESKTOP ===== */
+@media (min-width: 801px) {
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteudo {
+    background-color: var(--Cinza);
+    padding: 50px;
+    width: 50%;
+    height: auto;
+}
+
+#Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-image {
+    display: flex;
+    align-items: center;
+}
+
+.container-image img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    margin-right: 1rem;
+}
+
+button{
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem;
+    background-color: var(--Branco);
+}
+
+#componente {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 1rem;
+    margin-top: 1rem;
+}
+
+.comp-1{
+    padding: 1rem;
+    background-color: var(--Verde);
+    border-radius: 10px;
+}
+
+.comp-2{
+    padding: 1rem;
+    background-color: var(--Azul);
+    border-radius: 10px;
+}
+
+.comp-3{
+    padding: 1rem;
+    background-color: var(--Amarelo);
+    border-radius: 10px;
+}
+}
