@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-    <img src="/design/desktop2.png" alt="Logo" width="750">
+    <img src="/design/Desktop2.png" alt="Logo" width="750">
 
 
 Desafio criado por  <a href="https://www.linkedin.com/in/lorenagmontes/">Lorena</a> :)
